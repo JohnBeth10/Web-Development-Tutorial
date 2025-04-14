@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Entities and Quotation tags - HTML</title>
+  </head>
+
+  <body>
+    <!-- Code Tag -->
+    <h1>Code Tag</h1>
+    <pre><code>  
+#This is a python code
+print("Hello World") <p></p>
+     </code></pre>
+    <!-- The <pre> tag is used to display text exactly as it is written in the HTML file, preserving spaces, tabs, and line breaks. However, it cannot directly display text that includes characters like < or > unless they are escaped using HTML entities like &lt; and &gt;. -->
+    <!-- Entities -->
+    <h1>HTML Entities</h1>
+
+    <p>
+      HTML entities are a crucial part of HTML markup language. They enable you
+      to display characters that are reserved in HTML or that aren't readily
+      available on the keyboard. In this blog, we'll explore what HTML entities
+      are, their types, and how to use them.
+    </p>
+    <p>
+      HTML entities are used to represent special characters in a format that
+      the browser can understand. They start with an ampersand (&) and end with
+      a semicolon (;).
+    </p>
+    <h2>Common HTML Entities</h2>
+    <pre><code>
+&amp;lt; for &lt;
+&amp;gt; for &gt;
+&amp;amp; for &amp;
+&amp;nbsp; for a non-breaking space
+&amp;copy; for &copy;
+    </code></pre>
+
+    <!-- Examples -->
+    <p>The price is 10 &lt; 20.</p>
+    <p>Copyright &copy; John Bethlehem Pallan 2025.</p>
+    <p>
+      This is an
+      example&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text.
+    </p>
+
+    <!-- HTML Quotation Tag -->
+
+    <h1>HTML Quotation Tag</h1>
+    <p>
+      They provide semantic meaning to your quotations, making it easier for
+      search engines to understand the context and relevance of the content.
+    </p>
+    <p>Both of the follwing tags serve to define quotations in HTML</p>
+
+    <q> <code>&lt;q&gt;</code> is used for shorter, inline quotes</q>
+    <blockquote>
+      <code>
+&lt;blockquote&gt;</code> is used for longer, block-level quotes
+    </blockquote>
+  </body>
+</html>
