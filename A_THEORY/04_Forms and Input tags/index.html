@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lamg="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , initial-scale="width-device-width">
+</head>
+<title>Forms and Input tags</title>
+
+<body>
+    <h2>Fill your personal details (FORMS) </h2>
+    <form action="" method="post">
+        <!-- Text -->
+        <div>
+            <label for="Full Name">Full Name:</label>
+            <input type="text" id="Full Name" name="Full Name" placeholder="Enter your Full Name" required>
+        </div>
+        <br>
+        <!-- E-mail -->
+        <div>
+            <label for="E-mail">E-mail:</label>
+            <input type="email" id="E-mail" name="E-mail" placeholder="Enter your E-mail" required>
+        </div>
+        <br>
+        <!-- Password -->
+        <div>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" placeholder="Enter your valid password" required>
+        </div>
+        <br>
+        <!-- Radio Button -->
+        <div>
+            <label>Gender</label>
+            <br>
+            <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male">Male</label>
+            <br>
+
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+        </div>
+        <br>
+        <!-- Checkbox -->
+        <div>
+            <label>Interests:</label>
+            <br>
+            <input type="checkbox" id="Coding" name="Interests" value="Coding">
+            <label for="Coding">Coding</label>
+            <br>
+            <input type="checkbox" id="Gaming" name="Interests" value="Gaming">
+            <label for="Gaming">Gaming</label>
+            <br>
+            <input type="checkbox" id="design" name="Interests" value="design">
+            <label for="design">Design</label>
+        </div>
+        <br>
+        <!-- Select option -->
+        <div>
+            <label for="Department">Department:</label>
+            <select id="Department" name="Department" required>
+                <option value="">Select</option>
+                <option value="CSE">Computer Science and Engineering</option>
+                <option value="CSBS/CU">Computer Science and Business Systems</option>
+                <option value="ECE">Electronics and Communication Engineering</option>
+                <option value="EEE">Electrical and Electronics Engineering</option>
+                <option value="ME">Mechanical Engineering</option>
+            </select>
+        </div>
+        <br>
+        <!-- BIo -->
+        <div>
+            <label for="bio">Short Bio:</label>
+            <br>
+            <textarea id="bio" name="bio" rows="4" cols="30" placeholder="Tell us something about you!" required></textarea>
+        </div>
+        <br>
+        <!-- Select option -->
+        <div>
+            <label for="Fav Programming language">Which is your favorite Programming language?
+                <select id="Fav Programming language" name="Fav Programming language" required>
+                    <option value="">Select</option>
+                    <option value="C">C</option>
+                    <option value="Python">Python</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Java Script">Java Script</option>
+                </select>
+        </div>
+        <br>
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</body>
+
+</html>
