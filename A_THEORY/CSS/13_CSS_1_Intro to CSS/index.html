@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- This declaration defines the document type and version of HTML being used (HTML5 in this case) -->
+
+<html lang="en">
+<!-- The root element of the HTML document, with language set to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding to UTF-8, which supports most characters from all known languages -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper rendering and touch zooming on mobile devices by setting the viewport width to the device width -->
+
+    <title>Intro to CSS</title>
+    <!-- The title that will appear in the browser tab -->
+
+    <style>
+        /* This section contains internal CSS styles that apply to the HTML elements in the page */
+
+        div, span{
+            color: cyan; /* Sets the text color of all <div> and <span> elements to cyan */
+            background-color: black; /* Sets the background color of these elements to black */
+        }
+
+        p{
+            color: brown; /* Sets the text color of all <p> (paragraph) elements to brown */
+            background-color: gold; /* Sets the background color of the paragraph to gold */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This is the visible part of the webpage where all the content is placed -->
+
+    <div>I am John</div>
+    <!-- A div (block-level element) with the text “I am John”; styles from the div selector will apply -->
+
+    <p>Today, we'll be starting CSS</p>
+    <!-- A paragraph element; styles from the p selector will apply -->
+
+    <span>With CSS our webite become super-stylish</span>
+    <!-- A span (inline element) with a message about CSS; styles from the span selector will apply 
+         Note: there is a typo here — "webite" should be "website" -->
+
+    <div>Today we'll be learning css selectors</div>
+    <!-- Another div with a message; again, the div styles will apply here -->
+</body>
+</html>

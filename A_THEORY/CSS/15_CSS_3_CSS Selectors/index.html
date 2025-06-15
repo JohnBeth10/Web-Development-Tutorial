@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: burlywood;
+        }
+        /* Class Selector */
+        .classselector{
+            background-color: blueviolet;
+        }
+        /* ID Selector */
+        #idselector{
+            background-color: green;
+        }
+        /* Child Selector */
+        nav > div{
+            background-color: yellow;
+        }
+        /* Discendent Selector */
+        nav p{
+            background-color: cyan;
+        }
+        /* Pseudo Selector */
+        a:hover{
+            background-color: black;
+        }
+        a:active{
+            background-color: rgb(207, 27, 201);        
+        }
+        a:link{
+            color: grey;
+        }
+        span:first-child{
+           background-color: aqua;
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Today we are going to discuss about CSS Selectors</h1>
+    
+    <h2>Element Selector</h2>
+    <div>Example of element selector</div>
+
+    <h2>Class Selector</h2>
+    <nav class="classselector">
+        Example for Class selector
+    </nav>
+
+    <h2>ID Selector</h2>
+    <section id="idselector">
+        Example for ID selector 
+    </section>
+
+    <h3>Child Selector</h3>
+    <nav>
+        <div>Example for child selector </div> <!-- <p> has to come directly under the nav for child selector -->
+    </nav>
+
+    <h2>Discendent Selector</h2>
+    <nav>
+        <article>
+            <p>Example for Discendent selector </p>
+        </article>
+    </nav>
+
+    <h2>Pseudo selector</h2>
+    <main>
+        <a href="https://google.com">Google</a>
+        <a href="https://instagram.com">Instagam</a>
+    </main>
+
+    <h2>First Child Selector</h2>
+    <main>
+    <span>I am First</span><br>
+    <span>I am Second</span>
+    </main> 
+</body>
+</html>

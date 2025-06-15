@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: black;
+        }
+        .box1{
+            color: gold;
+            margin:30px;
+            padding:20px;
+            border:8px solid sandybrown;                     /*Margin collapse in CSS occurs when*/  
+            height: 200px;                               /*the vertical margins of adjacent elements combine*/
+            box-sizing:border-box;                        /*into a single margin equal to the largest one,*/
+        }                                                         /*rather than adding together.*/
+        .box2{
+            color:cyan;
+            margin:35px;
+            padding:20px;
+            border:8px solid sandybrown;
+            height: 200px;
+            box-sizing:border-box;
+        }
+        .box3{
+            color:purple;
+            margin:20px;
+            padding:20px;
+            border:15px solid saddlebrown;
+            height: 150px;
+            box-sizing: border-box  ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box box1">This is Box 1</div>
+    <div class="box box2">This is Box 2</div>
+    <div class="box box3">Box 3</div>
+</body>
+</html>
